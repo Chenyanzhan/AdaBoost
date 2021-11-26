@@ -183,7 +183,7 @@ def visualization(X, y, EnsembleModel):
     return None
 
 if __name__ == '__main__':
-    X,y = load_dataset()
+    X,y = load_dataset()   #创建数据集
     m,n = X.shape
     # print(SingleTree(X,0,0.3,'lt'))
     # D = np.ones((m,1))*(1/m)
@@ -191,5 +191,5 @@ if __name__ == '__main__':
     # print(BestTree)
     # print(MinError)
 
-    model = TrainAdaboost(X, y, 40)
-    visualization(X,y,model)
+    model = TrainAdaboost(X, y, 40) #训练AdaBoost模型
+    visualization(X,y,model)   #可视化
